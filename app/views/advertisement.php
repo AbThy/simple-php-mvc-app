@@ -5,6 +5,15 @@
 <body>
 
 <h1>Advertisement page</h1>
+<?php
+    echo "Number of active advertisements: " . count($data['data']);
+    foreach($data['data'] as $ad) {
+        echo '  <div class="spacer"/>
+                <div class="card">
+                <h3> '. $ad->title . '</h3>
+                </div>';
+    }
+?>
 
 </body>
 </html> 

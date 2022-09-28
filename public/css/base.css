@@ -7,7 +7,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     background-color: #0093E9; background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%); 
-    height: 100vh;
+    min-height: 100vh;
     /*
     font-family: 'Road Rage', cursive;
     font-family: 'Titillium Web', sans-serif;
@@ -17,4 +17,23 @@ body{
 
 h1{
     margin: 50px;
+}
+
+.card{
+    width: 400px;
+    height: 150px;
+    background-color: rgb(190, 235, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000070;
+    margin: 30px;
+    padding: 15px;
+}
+.card:hover{
+    background-color: rgb(255, 235, 255);
+    transform: translate(-4px, 0px);
+}
+
+.spacer{
+    height: 10vh;
 }

@@ -5,7 +5,9 @@
 <body>
 
 <h1>Users Page</h1>
-<p>Hello <?=$data['name']?><p>
+<?php
+    echo 'Hello ' . $data['name'];
+?>
 
 </body>
 </html> 
