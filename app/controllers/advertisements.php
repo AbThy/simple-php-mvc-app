@@ -3,7 +3,7 @@ class Advertisements extends Controller
 {
     public function index()
     {
-        echo 'advertisements/index';
+        $this->view('advertisement');
     }
 }
 ?>

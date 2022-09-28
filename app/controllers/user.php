@@ -1,9 +1,13 @@
 <?php
     class User extends Controller
     {
-        public function index()
+        public function index($param1 = 'Teszt Felhasználó!')
         {
-            echo 'user/index';
+            $user = $this->model('UserModel');
+            $user->name = $param1;
+            $user->id   = 0;
+    
+            $this->view('user', ['name' => $user->name]);
         }
     }
 ?>
