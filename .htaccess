@@ -1,7 +1,7 @@
 Options -MultiViews
 RewriteEngine On
 
-RewriteBase /RabIT/simple-php-mvc-app/public
+RewriteBase /RabIT/simple-php-mvc-app/public/index.php
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
