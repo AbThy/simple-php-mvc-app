@@ -3,7 +3,9 @@
     {
         public function index($param1 = 'Teszt Felhasználó!')
         {
-            require_once('F:/Apps/xamp/htdocs/RabIT/simple-php-mvc-app/app/models/UserModel.php');
+            //moved the folder inside <- i think there wass accessibility problems - only way it worked was a burnt_in full path (below)
+            //require_once('F:/Apps/xamp/htdocs/RabIT/simple-php-mvc-app/app/models/UserModel.php');
+            require_once("models/UserModel.php");
             //returning array of entities in DB
             $array = $this->get_users_from_db();
             $this->view('user', ['data' => $array]);

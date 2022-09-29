@@ -3,7 +3,7 @@ class Advertisements extends Controller
 {
     public function index()
     {
-        require_once('F:/Apps/xamp/htdocs/RabIT/simple-php-mvc-app/app/models/AdvertisementModel.php');
+        require_once('models/AdvertisementModel.php');
         //returning array of entities in DB
         $array = $this->get_ads_from_db();
         $this->view('advertisement', ['data' => $array]);
