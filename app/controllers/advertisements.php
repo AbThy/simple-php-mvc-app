@@ -19,10 +19,13 @@ class Advertisements extends Controller
         }
         $stmt = "SELECT * FROM advertisements";
         $result = $conn->query($stmt);
+        //get stdclass objects
         while ($ad = $result->fetch_object()) {
+            //create AdvertisementModel from object
             $advertisement = new AdvertisementModel($ad->id, $ad->userid, $ad->title);
             array_push($array, $advertisement);
         }
+        //returning advertisement array;
         return $array;
     }
 }

@@ -1,5 +1,8 @@
 <html lang="hu">
 <head>
+    <title>Advertisement app 0.1</title>
+    <meta charset="UTF-8">
+    
     <link rel="stylesheet" href="../public/css/base.css"/>
     <link rel="stylesheet" href="../public/css/home.css"/>
 </head>
