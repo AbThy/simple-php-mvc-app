@@ -9,5 +9,13 @@
     
             $this->view('user', ['name' => $user->name]);
         }
+
+        public function get_users_from_db()
+        {
+            // create connection to DB "advertisement_app"
+            $conn = new mysqli('localhost','root','','advertisement_app');
+            $user = $this->model('UserModel');
+            $array = [];
+        }
     }
 ?>

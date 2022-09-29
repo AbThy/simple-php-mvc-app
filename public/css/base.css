@@ -30,7 +30,7 @@ h1{
     padding: 15px;
 }
 .card:hover{
-    background-color: rgb(255, 235, 255);
+    color: #0093E9;
     transform: translate(-4px, 0px);
 }
 

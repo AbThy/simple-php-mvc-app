@@ -3,25 +3,25 @@ class Advertisements extends Controller
 {
     public function index()
     {
-        $array = $this->get_ads_from_sql();
+        require_once('F:/Apps/xamp/htdocs/RabIT/simple-php-mvc-app/app/models/AdvertisementModel.php');
+        //returning array of entities in DB
+        $array = $this->get_ads_from_db();
         $this->view('advertisement', ['data' => $array]);
     }
 
-    public function get_ads_from_sql()
+    public function get_ads_from_db()
     {
         // create connection to DB "advertisement_app"
         $conn = new mysqli('localhost','root','','advertisement_app');
-        $user = $this->model('UserModel');
         $array = [];
         if($conn->connect_error){
-            die('Connection Failed');
-        } else {
-            $stmt = "SELECT * FROM advertisements";
-            $result = $conn->query($stmt);
+            return $array;
         }
-        $array;
-        while ($user = $result->fetch_object()) {
-            array_push($array, $user);
+        $stmt = "SELECT * FROM advertisements";
+        $result = $conn->query($stmt);
+        while ($ad = $result->fetch_object()) {
+            $advertisement = new AdvertisementModel($ad->id, $ad->userid, $ad->title);
+            array_push($array, $advertisement);
         }
         return $array;
     }

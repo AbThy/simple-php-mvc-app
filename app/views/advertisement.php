@@ -10,7 +10,7 @@
     foreach($data['data'] as $ad) {
         echo '  <div class="spacer"/>
                 <div class="card">
-                <h3> '. $ad->title . '</h3>
+                <h3> '. $ad->get_title() . '</h3>
                 </div>';
     }
 ?>
