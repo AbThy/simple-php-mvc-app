@@ -10,10 +10,10 @@
 
 <h1>Welcome to ad app!</h1>
 <div class="menu">
-    <a href="http://localhost/RabIT/simple-php-mvc-app/public/advertisements">
+    <a href="http://localhost/simple-php-mvc-app/public/advertisements">
         <div class="menuItem">Advertisements</div>
     </a>
-    <a href="http://localhost/RabIT/simple-php-mvc-app/public/user  ">
+    <a href="http://localhost/simple-php-mvc-app/public/user  ">
         <div class="menuItem">Users</div>
     </a>
 </div>
