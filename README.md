@@ -8,9 +8,9 @@ I had to learn completely new ideas, and of course php from scratch, because i w
 React, PostgreSQL and nginx in the last year.
 
 ## App built with XAMPP at route: ' http://localhost/simple-php-mvc-app/public/ '
-Put project in `htdocs` fodler to run it the same way.
+Put project in `htdocs` folder to run it the same way.
 ---
-Database created with SQL commands:
+Tables in DB created with these commands:
 
 CREATE TABLE `advertisement_app`.`advertisements` (`id` BIGINT NOT NULL AUTO_INCREMENT , `name` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 
